@@ -47,3 +47,7 @@ input[type=submit]:hover{
   background-color:  rgba(66, 155, 177, 0.75);
   color: white
 }
+
+button{
+  color: black;
+}

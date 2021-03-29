@@ -11,11 +11,12 @@ function addList(event){
     liTag.textContent = input
     task.appendChild(liTag)
     event.target.querySelector("#new-task-description").value = ""
-    var checkbox = document.createElement('input');
-    checkbox.type = "checkbox"
-    checkbox.value = 1
-    checkbox.name = "done"
-    liTag.appendChild(checkbox)
+    let deleteButton = document.createElement("button")
+    deleteButton.style.fontSize = "8px"
+    deleteButton.style.background = "white"
+    deleteButton.innerText = "X"
+    deleteButton.onclick = ()=>liTag.remove()
+    liTag.appendChild(deleteButton)
 }
 
 
